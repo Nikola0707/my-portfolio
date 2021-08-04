@@ -13,6 +13,38 @@ html {
 .page-container {
   height: 90vh;
 }
+.navbar{
+  width: 9rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #181818;
+  /* background-image: url("./assets/img/nav2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.navbar ul{
+  list-style-type: none;
+  margin-top: 3rem;
+  padding: 0 0.2rem;
+}
+.navbar-li{
+  border-top: 1px solid #626366;
+  border-bottom: 1px solid #626366;
+  padding: 15px 10px;
+  color:#626366;
+  /* background-color: #00ffe9; */
+  opacity: 0.9;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+.navbar-li:hover{
+  text-decoration: underline ;
+  color: #00ffe9;
+}
 .contact-me-title h2,
 .about-me-title h2,
 .div-right h2,
@@ -26,13 +58,13 @@ html {
 .about-me-container {
   margin-top: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .about-me-explanation{
   max-width: 80%;
 }
 .projects-container {
-  margin-top: 200px;
+  margin: 200px 0;
 }
 .wrapper {
   display: grid;
@@ -126,13 +158,14 @@ html {
   color: #1d1d1d;
 }
 .scrool-down {
-  position: sticky;
+  position: fixed;
+  top: 20%;
+  left: 0;
   writing-mode: vertical-rl;
   font-size: 1.4rem;
   font-family: "Indie Flower", cursive;
-  margin-left: auto;
-  margin-right: 0;
-  padding: 0.5rem 0;
+  /* margin-left: auto; */
+  padding:0;
   color: #00ffe9;
 }
 .span-d-block {
@@ -205,9 +238,8 @@ html {
 .show-project-container {
   margin-top: 3rem;
   display: grid;
-  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
+
 }
 /* Project CARD */
 .hvrbox,
@@ -299,6 +331,7 @@ html {
 }
 .quotes p {
   margin: 0;
+  width: 80%;
 }
 
 .contact-me-info-interested,

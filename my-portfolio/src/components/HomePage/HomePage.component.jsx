@@ -1,14 +1,17 @@
+import Navbar from "../Navbar/navbar.component";
 import About from "../About/About.component";
+import Projects from "../Projects/Projects.component";
 
 import { FaArrowsAltV } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 import myPersonalImg from "../../assets/img/NikolaCropPNG.png";
-import Projects from "../Projects/Projects.component";
+import ContactMe from "../ContactMe/ContactMe.component";
 
 const HomePage = () => {
   return (
-    <div className="page-container">
+    <div className="page-container" id="home">
+      <Navbar />
       <div className="wrapper">
         <div className="text-wrap" data-aos="fade-down-left">
           <span className="text-like-html">{"<h1>"}</span>
@@ -67,13 +70,13 @@ const HomePage = () => {
           </h1>
           <span className="text-like-html-title-right">{"</h1>"}</span>
         </div>
-        <div className="personal-img-wrap" data-aos="fade-down-right">
+        {/* <div className="personal-img-wrap" data-aos="fade-down-right">
           <span className="text-like-html">{"<img"}</span>
           <div>
             <img src={myPersonalImg} alt="img" />
           </div>
           <span className="text-like-html">{"/>"}</span>
-        </div>
+        </div> */}
       </div>
       <div className="if-tag">
         <span className="text-like-html">{"if (questions) {"}</span>
@@ -95,7 +98,7 @@ const HomePage = () => {
       </div>
       <About />
       <Projects />
-
+      <ContactMe/>
     </div>
   );
 };

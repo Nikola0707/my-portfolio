@@ -25,7 +25,7 @@ const Projects = () => {
 
   return (
     
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <span className="text-like-html">{"<h2>"}</span>
       <h2>My Recent Work</h2>
       <span className="text-like-html">{"</h2>"}</span>
@@ -38,13 +38,6 @@ const Projects = () => {
             key={index}
           />
         ))}
-      </div>
-      <div className="scroll">
-        <span className="text-like-html span-d-block">{"<p>"}</span>
-        <p className="scrool-down bounceIn">
-          scroll <FaArrowsAltV />
-        </p>
-        <span className="text-like-html span-d-block">{"</p>"}</span>
       </div>
     </div>
   );

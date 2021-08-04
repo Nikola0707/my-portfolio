@@ -11,7 +11,7 @@ const About = () => {
   }, []);
   return (
     <div className="about-me-container">
-      <div className="div-left" data-aos="fade-right">
+      <div className="div-left" data-aos="fade-right" id="about">
         <div className="about-me-title">
           <span className="text-like-html">{"<h2>"}</span>
           <h2>About Me</h2>
@@ -53,7 +53,7 @@ const About = () => {
           <span className="text-like-html">{"</p>"}</span>
         </div>
       </div>
-      <div className="div-right" data-aos="fade-left">
+      <div className="div-right" data-aos="fade-left" id="skills">
         <span className="text-like-html">{"<h2>"}</span>
         <h2>Skills</h2>
         <span className="text-like-html">{"</h2>"}</span>
