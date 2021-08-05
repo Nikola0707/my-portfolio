@@ -1,12 +1,14 @@
 import Navbar from "../Navbar/navbar.component";
 import About from "../About/About.component";
 import Projects from "../Projects/Projects.component";
+import ContactMe from "../ContactMe/ContactMe.component";
 
 import { FaArrowsAltV } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 import myPersonalImg from "../../assets/img/NikolaCropPNG.png";
-import ContactMe from "../ContactMe/ContactMe.component";
+
+import { Link } from "react-scroll";
 
 const HomePage = () => {
   return (
@@ -82,9 +84,9 @@ const HomePage = () => {
         <span className="text-like-html">{"if (questions) {"}</span>
         <div className="contact-me-button slideInLeft">
           <span className="text-like-html">{"<button>"}</span>
-          <NavLink to="/contactMe" className="btn-contact-me">
-          Get In Touch
-          </NavLink>
+          <Link to="contact" spy={true} smooth={true} className="btn-contact-me">
+            Get In Touch
+          </Link>{" "}
           <span className="text-like-html">{"</button>"}</span>
         </div>
         <span className="text-like-html">{"}"}</span>
@@ -98,7 +100,9 @@ const HomePage = () => {
       </div>
       <About />
       <Projects />
-      <ContactMe/>
+      <ContactMe />
+      <p className="text-like-html-body">{"</body>"}</p>
+      <p className="text-like-html-html">{"</html>"}</p>
     </div>
   );
 };

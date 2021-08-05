@@ -53,8 +53,8 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="page-container" id="contact">
-      <div className="contact-me-grid">
+
+      <div className="contact-me-grid contact-me-container" id="contact">
         <div className="contact-me-form">
           <div className="contact-me-title">
             <span className="text-like-html">{"<h2>"}</span>
@@ -119,12 +119,9 @@ const ContactMe = () => {
             </div>
           </form>
           <span className="text-like-html">{"</form>"}</span>
-          <p className="text-like-html-body">{"</body>"}</p>
-          <p className="text-like-html-html">{"</html>"}</p>
         </div>
         <SocialMedia />
       </div>
-    </div>
   );
 };
 
