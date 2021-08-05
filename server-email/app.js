@@ -5,7 +5,7 @@ const sendMail = require('./lib/nodemailer')
 const app = express();
 app.use(cors())
 
-const port = 3001;
+const port = Process.env.PORT || 3001;
 app.use(express.json())
 
 app.get("/", (req, res) => {
