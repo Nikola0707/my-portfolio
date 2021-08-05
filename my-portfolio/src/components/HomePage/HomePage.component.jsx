@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 const HomePage = () => {
   return (
     <div className="page-container" id="home">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="wrapper">
         <div className="text-wrap" data-aos="fade-down-left">
           <span className="text-like-html">{"<h1>"}</span>
