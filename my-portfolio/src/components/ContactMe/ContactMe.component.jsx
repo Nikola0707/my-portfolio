@@ -36,7 +36,7 @@ const ContactMe = () => {
       subject,
       message,
     };
-    let response = await fetch("http://localhost:3001/sendMail", {
+    let response = await fetch("https://git.heroku.com/my-portfolio-contact.git/sendMail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
