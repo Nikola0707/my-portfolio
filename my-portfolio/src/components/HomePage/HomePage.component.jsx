@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import myPersonalImg from "../../assets/img/NikolaCropPNG.png";
 
 import { Link } from "react-scroll";
+import SocialMedia from "../SocialMedia/SocialMedia.component";
 
 const HomePage = () => {
   return (
@@ -72,6 +73,7 @@ const HomePage = () => {
           </h1>
           <span className="text-like-html-title-right">{"</h1>"}</span>
         </div>
+        <SocialMedia hide={true}/>
         {/* <div className="personal-img-wrap" data-aos="fade-down-right">
           <span className="text-like-html">{"<img"}</span>
           <div>
