@@ -11,36 +11,36 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-.navbar{
+.navbar {
   width: 9rem;
   height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
   /* background-color: rgb(255, 255, 255); */
-   background-image: url("./assets/img/nav2.jpg");  
-   background-position: center;
+  background-image: url("./assets/img/nav2.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
-.navbar ul{
+.navbar ul {
   list-style-type: none;
   margin-top: 3em;
   padding: 0;
 }
-.navbar-li{
+.navbar-li {
   width: 100%;
   border-bottom: 1px solid #626366;
   padding: 15px 10px;
-  color:#fff;
+  color: #fff;
   background-color: #202020;
   opacity: 0.9;
   font-size: 1.2rem;
   font-weight: 900;
   cursor: pointer;
 }
-.navbar-li:hover{
-  text-decoration: underline ;
+.navbar-li:hover {
+  text-decoration: underline;
   color: #00ffe9;
 }
 .contact-me-title h2,
@@ -53,7 +53,7 @@ html {
   color: #00ffe9;
   font-size: 3rem;
 }
-.contact-me-container{
+.contact-me-container {
   margin-top: 15rem;
 }
 .about-me-container {
@@ -61,7 +61,7 @@ html {
   display: flex;
   justify-content: space-evenly;
 }
-.about-me-explanation{
+.about-me-explanation {
   max-width: 80%;
 }
 .projects-container {
@@ -136,7 +136,7 @@ html {
 .if-tag {
   margin-top: 2rem;
 }
-.empty-fields{
+.empty-fields {
   border: 1px solid gray;
   padding: 10px;
   color: red;
@@ -167,7 +167,7 @@ html {
   font-size: 1.4rem;
   font-family: "Indie Flower", cursive;
   /* margin-left: auto; */
-  padding:0;
+  padding: 0;
   color: #00ffe9;
 }
 .span-d-block {
@@ -466,5 +466,158 @@ textarea:focus {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+  }
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body{
+    padding: 0 20px;
+  }
+  .scroll{
+    display: none;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .text-wrap {
+    display: block;
+    padding-left: 0;
+  }
+  .text-wrap h1 {
+    font-size: 1.5rem;
+    margin: 0.3rem 1rem;
+  }
+  .scrool-down {
+    display: none;
+  }
+
+  .about-me-container {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .skills-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+  }
+  .skills-icon {
+    font-size: 2rem;
+  }
+  .projects-container {
+    margin: 20px;
+  }
+  .contact-me-grid {
+    grid-template-columns: 1fr;
+  }
+  .quotes {
+    display: none;
+  }
+  .show-project-container {
+    grid-template-columns: 1fr;
+  }
+  .project-card-btn {
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
+  .social-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+  }
+  .social-icon {
+    font-size: 3rem;
+    margin: 10px;
+  }
+  .contact-me-container {
+    margin-top: 1rem;
+  }
+  .btn-send-message{
+    margin-left: 0;
+  }
+  .form-name-email{
+    grid-template-columns: 1fr;
+  }
+  .contact-me-button {
+    text-align: center;
+  }
+  .btn-contact-me {
+    padding: 0.8rem 1rem;
+    margin: 0;
+  }
+  .contact-me-title h2,
+  .about-me-title h2,
+  .div-right h2,
+  .projects-container h2,
+  .lets-connect-container h2 {
+    display: block;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .lets-connect-container{
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+  
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body{
+    padding: 0 20px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .scroll{
+    display: none;
+  }
+  .text-wrap {
+    display: block;
+    padding-left: 0;
+  }
+  .contact-me-button {
+    text-align: center;
+  }
+  .btn-contact-me {
+    padding: 0.8rem 3rem;
+    margin: 0;
+  }
+  .about-me-container {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .skills-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+  }
+  .skills-icon {
+    font-size: 2rem;
+  }
+  .contact-me-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+  }
+  .skills-icon {
+    font-size: 2rem;
+  }
+  .contact-me-title h2, .about-me-title h2, .div-right h2, .projects-container h2, .lets-connect-container h2 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  .show-project-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-me-container{
+    margin-top: 2rem;
+  }
+  .projects-container{
+    margin: 3rem 0 0 0;
   }
 }
