@@ -52,7 +52,7 @@ const Projects = () => {
     
     <div className="projects-container" id="projects">
       <span className="text-like-html">{"<h2>"}</span>
-      <h2>My Recent Work</h2>
+      <h2>Projects</h2>
       <span className="text-like-html">{"</h2>"}</span>
       <div className="show-project-container">
         {projects.map((project, index) => (
