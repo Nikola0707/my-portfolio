@@ -565,7 +565,7 @@ textarea:focus {
   .div-left,
   .div-right,
   .contact-me-form{
-    height: 100vh;
+    margin-bottom: 100px;
   }
 
   .skills-grid-container {
@@ -614,7 +614,6 @@ textarea:focus {
     text-align: center;
   }
   .btn-contact-me {
-    padding: 0.8rem 1rem;
     margin: 0;
   }
   .contact-me-title h2,
