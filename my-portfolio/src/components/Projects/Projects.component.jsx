@@ -8,6 +8,7 @@ import foodMenu from "../../assets/img/projects-imgs/food-manu.png";
 import reviewCard from "../../assets/img/projects-imgs/review-card.png";
 import travelTour from "../../assets/img/projects-imgs/travel-tour.png";
 import accordion from "../../assets/img/projects-imgs/accordion.png";
+import todo from "../../assets/img/projects-imgs/todo.png"
 
 const Projects = () => {
   const projects = [
@@ -15,6 +16,11 @@ const Projects = () => {
       img: food,
       description: "Recipe Full Stack MERN Application",
       url: "https://addyourrecipe.netlify.app/",
+    },
+    {
+      img: todo,
+      description: "Task management MERN Application",
+      url: "https://taskmanagerapplication.netlify.app",
     },
     {
       img: weather,

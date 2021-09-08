@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 const ProjectCard = ({ img, description, url }) => {
   useEffect(() => {
+    // Animaition
     Aos.init({
       disable: "mobile",
       duration: 2000,
