@@ -25,18 +25,17 @@ const About = () => {
           </p>
           <p>
             I'm Nikola Ristoski{" "}
-            <span className="p-color">bachelor of Informatics</span> and Entry
-            Level <span className="p-color">Full Stack JavaScript</span>{" "}
-            Developer located in Skopje, Macedonia.
+            <span className="p-color">bachelor of Informatics</span> and{" "}
+            <span className="p-color">Full Stack JavaScript Developer</span>{" "}
+            located in Skopje, Macedonia.
           </p>
           <p>
             I'm passionated about{" "}
             <span className="p-color">Web development </span>
-            and learning <span className="p-color">new</span> technologies.
+            and learning <span className="p-color">new technologies</span>.
           </p>
           <p>
-            Proactive, fast learner and motivated
-            <span className="p-color"> Team Player </span> eager and excited to
+            <span className="p-color">Proactive, fast learner</span> <span className="p-color">and motivated Team Player </span> eager and excited to
             learn from industry experts.
           </p>
           <p>

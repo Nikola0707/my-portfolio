@@ -11,9 +11,10 @@ const ProjectCard = ({ img, description, url }) => {
   }, []);
   return (
     <div className="project-card hvrbox" data-aos="flip-left">
-      <img src={img} alt="project-img" />
-      <div class="hvrbox-layer_top">
-        <div class="hvrbox-text">
+      {/* <img src={img} alt="project-img" /> */}
+      <img src={`data:image/png;base64, ${img}`} alt="Red dot" />
+      <div className="hvrbox-layer_top">
+        <div className="hvrbox-text">
           <p className="project-description">{description}</p>
           <a href={url} className="project-card-btn">
             Visit Website
