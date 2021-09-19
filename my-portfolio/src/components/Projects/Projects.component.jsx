@@ -1,7 +1,11 @@
 import ProjectCard from "../ProjectCard/Project.Card.component";
 import { useEffect, useState } from "react";
 
+// Sceletons
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+
 const Projects = () => {
+  const [fetching, setFetching] = useState();
   // Keep fetchet project data from DB
   const [data, setData] = useState([]);
   // Push data to this array after img buffer is converted to base64
@@ -10,12 +14,14 @@ const Projects = () => {
 
   // Fetch projects from DB
   const fetchProjects = async () => {
+    setFetching(true);
     await fetch("https://my-portfolio-contact.herokuapp.com/project")
       .then((response) => response.json())
       .then((data) => {
         setData(data);
       })
-      .catch((e) => console.log(e));
+      .catch((e) => console.log(e))
+      .finally(() => setFetching(false));
   };
 
   // Map through project data
@@ -43,14 +49,20 @@ const Projects = () => {
       <h2>Projects</h2>
       <span className="text-like-html">{"</h2>"}</span>
       <div className="show-project-container">
-        {projects.map((project) => (
-          <ProjectCard
-            img={project.img}
-            description={project.description}
-            url={project.url}
-            key={project._id}
-          />
-        ))}
+        {fetching ? (
+          <SkeletonTheme color="#757373" highlightColor="#00FFE9">
+            <Skeleton count={1} height="200px" />
+          </SkeletonTheme>
+        ) : (
+          projects.map((project) => (
+            <ProjectCard
+              img={project.img}
+              description={project.description}
+              url={project.url}
+              key={project._id}
+            />
+          ))
+        )}
       </div>
     </div>
   );
